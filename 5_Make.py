@@ -38,5 +38,5 @@ if __name__ == '__main__':
         miles = pedometer(steps)
         print(f'{miles:.2f}')
     except ValueError:
-        print("Negative step count entered")
+        print("Negative steps count entered")
     
