@@ -27,4 +27,16 @@ Exception: Negative step count entered.
 # Define your method here
 
 if __name__ == '__main__':
-    # Type your code here.
+    def pedometer(steps):
+        if steps < 0:
+            raise ValueError
+        miles = steps / 2000
+        return miles
+
+    try:
+        steps = int(input("Input your number of steps"))
+        miles = pedometer(steps)
+        print(f'{miles:.2f}')
+    except ValueError:
+        print("Negative step count entered")
+    
